@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cawbbcs11qtv2"]
+
+[ext_resource type="Script" path="res://Player/Soul.gd" id="1_o0otu"]
+[ext_resource type="Texture2D" uid="uid://bg5nml8mvbrfa" path="res://Player/CharacterPlaceholder.png" id="2_ncpku"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_17v0s"]
+radius = 30.0
+
+[node name="Hull" type="CharacterBody2D"]
+script = ExtResource("1_o0otu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_17v0s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.5, -0.5)
+scale = Vector2(1.01667, 1.01667)
+texture = ExtResource("2_ncpku")

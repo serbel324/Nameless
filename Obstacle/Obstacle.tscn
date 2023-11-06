@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp55mqdh0jw4i"]
+
+[ext_resource type="Texture2D" uid="uid://beeyp8m4qletq" path="res://Obstacle/Placeholder.png" id="1_j7vei"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4sgec"]
+size = Vector2(60, 60)
+
+[node name="Obstacle" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4sgec")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_j7vei")

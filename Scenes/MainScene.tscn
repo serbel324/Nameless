@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfox8n4ptgh10"]
+
+[ext_resource type="PackedScene" uid="uid://cawbbcs11qtv2" path="res://Player/Hull.tscn" id="1_od0j6"]
+[ext_resource type="PackedScene" uid="uid://cp55mqdh0jw4i" path="res://Obstacle/Obstacle.tscn" id="2_rls08"]
+
+[node name="Node2D" type="Node2D"]
+rotation = -0.000934614
+
+[node name="Hull" parent="." instance=ExtResource("1_od0j6")]
+position = Vector2(223, 170)
+
+[node name="Obstacle" parent="." instance=ExtResource("2_rls08")]
+position = Vector2(196, 515)
+
+[node name="Obstacle2" parent="." instance=ExtResource("2_rls08")]
+position = Vector2(368, 136)
+rotation = -0.940316
+
+[node name="Obstacle3" parent="." instance=ExtResource("2_rls08")]
+position = Vector2(423, 463)

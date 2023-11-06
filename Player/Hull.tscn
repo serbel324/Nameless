@@ -8,6 +8,7 @@ radius = 30.0
 
 [node name="Hull" type="CharacterBody2D"]
 script = ExtResource("1_o0otu")
+MOVE_SPEED = 300.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_17v0s")
